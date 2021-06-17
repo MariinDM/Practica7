@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS GRID</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        *::-webkit-scrollbar {
+            width: 12px;
+        }
+        *::-webkit-scrollbar-track{
+            background-color: peru;
+        }
+        *::-webkit-scrollbar-thumb {
+            background-color: blue;
+            border-radius: 20px;
+        }
+        .container{
+            display: grid;
+            background-color: peru;
+            height: 100vh;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: 6vh 6vh 20vh 40vh 40vh 40vh;
+        }
+        .header{
+            grid-column: 1/7;
+            background-color: black;
+        }
+        .nav{
+            grid-column: 1/7;
+            background-color: #a0d3e8;
+        }
+        .aside{
+            grid-column: 1;
+            grid-row: 3/6;
+            background-color: yellow;
+            overflow-y: scroll;
+        }
+        .cuadro1{
+            grid-column: 2/7;
+            background-color: #00bfbf;
+            grid-row: 3;
+        }
+        .cuadro2{
+            grid-column: 2/7;
+            background-color: darkorchid;
+            grid-row: 4/5;
+        }
+        .doscuadros{
+            display: grid;
+            grid-column: 2/7;
+            grid-row: 5;
+            grid-template-columns: 1fr 1fr;
+        }
+        .izq{
+            grid-column: 1/2;
+            background-color: darkolivegreen;
+            grid-row: 1/5;
+        }
+        .der{
+            grid-column: 0/1;
+            background-color: firebrick;
+            grid-row: 1/5;
+            overflow-y: scroll;
+        }
+        .cuatrocua{
+            grid-column: 2/7;
+            grid-row: 6;
+            background-color: #7d0000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header"></div>
+    <div class="nav"></div>
+    <div class="aside"><p><span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid assumenda autem dolorem doloremque, eius ex expedita iste magni neque nisi numquam quam quas quod sequi vitae voluptas voluptatum.</span><span>Distinctio error fuga illum incidunt ipsam rem, similique! Ab accusamus doloremque maiores. Accusamus blanditiis deleniti dolorem, dolorum eos facilis illo iure, odio quasi quos sequi sint tempore, voluptas voluptates voluptatibus!</span><span>Accusamus asperiores ea harum id illum impedit ipsa maiores mollitia perferendis, possimus quae reiciendis similique voluptatem! Earum, illo iusto labore pariatur rerum soluta. Aspernatur atque debitis fuga nisi sequi ut?</span><span>Accusamus alias, animi aspernatur dolorem doloremque dolores dolorum eveniet excepturi facere illum incidunt inventore ipsam libero, modi molestias natus neque numquam odit officiis quam quidem reiciendis saepe vel voluptas voluptatum?</span> ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda consectetur debitis, ex harum hic iste labore, magni nisi quae repudiandae vitae, voluptate voluptates! Ea error et harum iusto vero.</span><span>Animi, at beatae commodi deserunt dolor dolorum fuga harum in laudantium minus numquam odio omnis perferendis possimus quod rerum saepe temporibus ullam unde veniam! Amet consectetur cumque fugit saepe unde.</span><span>Alias amet blanditiis consequuntur dignissimos dolorem dolores facere fugit impedit ipsa iste modi nihil nisi nostrum odio officia perferendis perspiciatis provident quibusdam quo, reprehenderit sit tempora tempore. Debitis, eaque, vero?</span><span>Asperiores cum dolor explicabo illum magni quae! Adipisci, aliquid, dolore eum exercitationem fugiat in laudantium magnam maiores nam nisi odio odit perspiciatis praesentium reprehenderit, sequi similique sit velit vero voluptas!</span><span>Blanditiis, eos eum incidunt inventore ipsum nemo omnis optio perferendis, quas reprehenderit, sequi soluta! Amet debitis deserunt dolore, fuga labore modi necessitatibus nobis officia quae quaerat, quidem reprehenderit, sapiente velit!</span></p></div>
+    <div class="cuadro1"></div>
+    <div class="cuadro2"></div>
+    <div class="doscuadros">
+        <div class="izq"></div>
+        <div class="der"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aliquid amet animi aut beatae culpa, dolor dolores ea ex illum labore non nostrum numquam praesentium quis quod, sed sint sit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad alias aliquam aperiam atque blanditiis cumque error eum explicabo maxime nam non officia optio pariatur perspiciatis praesentium, quam quia ullam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eos error est ex facilis fugit itaque laborum libero maxime natus non, optio quod quos rem reprehenderit rerum sapiente soluta ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur cupiditate eius recusandae sed. Consequatur consequuntur culpa harum impedit in maxime minus molestias omnis quaerat quasi. Dignissimos maxime nobis quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis eius est expedita facilis labore neque odit possimus quos tempora? Alias atque dolore eius odit quam repudiandae. Asperiores, reprehenderit repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ex fugiat id minima nisi perspiciatis quibusdam repellat unde! Expedita facilis laboriosam nemo nulla numquam, quae tempore. Adipisci libero obcaecati ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur distinctio eaque ex facere hic, quod sint? Consequuntur dignissimos doloribus ex expedita hic nobis non odio, sint sunt velit, voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aliquam beatae consectetur culpa debitis ea expedita itaque laborum officia optio quas qui quis, ratione reiciendis rerum, saepe sint voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda beatae cumque distinctio dolor, eaque eum excepturi fugit hic iusto maiores natus numquam quam quasi quibusdam repellendus sed similique velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias animi aperiam aspernatur assumenda atque doloribus eaque illum nam perferendis possimus quae quas qui sapiente, soluta temporibus, veritatis vero voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem commodi dicta eaque error eveniet laborum minima qui recusandae! A beatae consequatur cum deserunt dolore porro quaerat quibusdam tempora voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, atque explicabo fugiat impedit maxime nostrum obcaecati omnis, pariatur perferendis perspiciatis praesentium quam quis quo reprehenderit rerum similique tempore tenetur voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos molestias quam repellat tenetur? Asperiores dignissimos ex iusto, quidem sunt tempore vel! Animi architecto aut libero magnam natus non quod ullam.</p></div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
